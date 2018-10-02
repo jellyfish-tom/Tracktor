@@ -7,6 +7,11 @@ OfflinePluginRuntime.install();
 
 declare let module: any
 
+if (process.env.NODE_ENV !== 'production') {
+	console.log('Looks like we are in development mode!');
+	//SET SOME VISUAL INDICATOR IN APP
+}
+
 if (module.hot) {
    module.hot.accept();
 }
