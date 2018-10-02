@@ -1,5 +1,5 @@
 # Tracktor - Track all the things!
-![TracktorLogo](https://github.com/jellyfish-tom/Tracktor/raw/master/dist/img/icons/icon322.png)
+![TracktorLogo](https://github.com/jellyfish-tom/Tracktor/raw/master/app/src/public/img/icons/icon322.png)
 
 ### Project has (quite) easily been started thanks to:
 
