@@ -1,6 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Hello } from './components/Hello';
+import * as OfflinePluginRuntime from 'offline-plugin/runtime';
+
+OfflinePluginRuntime.install();
 
 declare let module: any
 
