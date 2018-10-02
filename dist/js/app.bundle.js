@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "4d9b72fbbc343293aede";
+/******/ 	var hotCurrentHash = "847ab33e782a4d99963a";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -23482,10 +23482,24 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 var Hello = (function (_super) {
     __extends(Hello, _super);
-    function Hello() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function Hello(props) {
+        var _this = _super.call(this, props) || this;
+        _this.state = {
+            showInstallMessage: false
+        };
+        return _this;
     }
+    Hello.prototype.componentDidMount = function () {
+        var isIos = function () {
+            return /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
+        };
+        var isInStandaloneMode = function () { return ('standalone' in window.navigator) && (window.navigator.standalone); };
+        if (isIos() && !isInStandaloneMode()) {
+            this.setState({ showInstallMessage: true });
+        }
+    };
     Hello.prototype.render = function () {
+        var showInstallMessage = this.state.showInstallMessage;
         return React.createElement(React.Fragment, null,
             React.createElement("h1", null,
                 "This is Tracktor! A ",
@@ -23494,6 +23508,8 @@ var Hello = (function (_super) {
                 this.props.compiler,
                 " with ",
                 this.props.bundler),
+            React.createElement("div", null, showInstallMessage &&
+                React.createElement("div", null, "You can add that app to your homescreen")),
             React.createElement("footer", null,
                 React.createElement("div", null,
                     "Tractor icon made by ",
@@ -23504,7 +23520,7 @@ var Hello = (function (_super) {
                     React.createElement("a", { href: "http://creativecommons.org/licenses/by/3.0/", title: "Creative Commons BY 3.0", target: "_blank" }, "CC 3.0 BY"))));
     };
     return Hello;
-}(React.Component));
+}(React.PureComponent));
 exports.Hello = Hello;
 
 

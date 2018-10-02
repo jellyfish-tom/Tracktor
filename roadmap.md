@@ -1,12 +1,14 @@
-### Dev.
+### Technicalities
 *** TODO ***
+- add gitignore
+- add codesplitting (?) for improved performance
 - add test env (testcafe, jest, enzyme)
 - add storybook
 - add some predesigned elements library
 - add continous integration
     https://hackernoon.com/continuous-integration-using-travis-on-github-1f7f2314b6b7
 - add typestyle
-- add coding guide 
+- add coding guide
 - add linter
 - add funcionality roadmap below
 - enable auto dev/prod mode setting in webpack
