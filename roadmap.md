@@ -1,7 +1,6 @@
 ### Technicalities
 *** TODO ***
 - add gitignore
-- add codesplitting (?) for improved performance
 - add test env (testcafe, jest, enzyme)
 - add storybook
 - add some predesigned elements library
@@ -10,9 +9,6 @@
 - add typestyle
 - add coding guide
 - add linter
-- enable auto dev/prod mode setting in webpack
-    https://webpack.js.org/concepts/mode/
-- split development and production configs in webpack
 
 *** DONE ***
 - setup initial babel, webpack, typescript, react app
@@ -22,6 +18,7 @@
 - enable css caching (webpack plugin [https://github.com/NekR/offline-plugin] caching all assets)
 - add home icon for iOS
 - add splash screen for iOS
+- split development and production configs in webpack
 
 ### Functionalities
 *** TODO ***
