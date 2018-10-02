@@ -1,8 +1,7 @@
-# Tracktor
-## Track all the things!
+# Tracktor - Track all the things!
 ![TracktorLogo](https://github.com/jellyfish-tom/Tracktor/raw/master/dist/img/icons/icon322.png)
-![TorchTracktor](https://memecreator.org/static/images/memes/4880344.jpg)
-### Project has easily been started thanks to:
+
+### Project has (quite) easily been started thanks to:
 
 - ***Initial Project Setup*** 
     
