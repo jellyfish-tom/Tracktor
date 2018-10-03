@@ -1,7 +1,6 @@
 ### Technicalities
 *** TODO ***
 - add test env (testcafe, jest, enzyme)
-- add storybook
 - add some predesigned elements library
 - add continous integration
     https://hackernoon.com/continuous-integration-using-travis-on-github-1f7f2314b6b7
@@ -19,6 +18,7 @@
 - split development and production configs in webpack
 - add gitignore
 - add typestyle
+- add storybook
 
 ### Functionalities
 *** TODO ***

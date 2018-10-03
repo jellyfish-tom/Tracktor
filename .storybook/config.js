@@ -20,12 +20,5 @@ function loadStories() {
 }
 
 addDecorator(withKnobs);
-addDecorator(story => (
-  <div style={{ margin: 20 }}>
-    {story()}
-  </div>
-))
-
-configure(loadStories, module);
 
 configure(loadStories, module);
