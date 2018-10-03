@@ -1,5 +1,5 @@
-import * as React from 'react';
-
+import * as React from 'react'
+import * as styles from "./Hello.styles"
 interface IProps {
    compiler: string,
    framework: string,
@@ -33,7 +33,11 @@ export class Hello extends React.PureComponent<IProps, { showInstallMessage: boo
         const { showInstallMessage } = this.state
 
         return <React.Fragment>
-            <h1>This is Tracktor! A {this.props.framework} application using    {this.props.compiler} with {this.props.bundler}</h1>
+            <h1 className={styles.hello}>
+                This is Tracktor! A {this.props.framework} 
+                application using {this.props.compiler} 
+                with {this.props.bundler}
+            </h1>
             <div>
             { 
                 showInstallMessage && 

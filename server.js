@@ -1,7 +1,7 @@
 const path = require('path'),
    express = require('express'),
    webpack = require('webpack'),
-   webpackConfig = require('./webpack.dev.js'),
+   webpackConfig = require('./webpack.dev.js'), // SHOULDNT IT CHECK NODE.env? 
    app = express(),
    port = process.env.PORT || 3000;
 

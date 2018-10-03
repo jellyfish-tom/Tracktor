@@ -1,12 +1,10 @@
 ### Technicalities
 *** TODO ***
-- add gitignore
 - add test env (testcafe, jest, enzyme)
 - add storybook
 - add some predesigned elements library
 - add continous integration
     https://hackernoon.com/continuous-integration-using-travis-on-github-1f7f2314b6b7
-- add typestyle
 - add coding guide
 - add linter
 
@@ -19,6 +17,8 @@
 - add home icon for iOS
 - add splash screen for iOS
 - split development and production configs in webpack
+- add gitignore
+- add typestyle
 
 ### Functionalities
 *** TODO ***
