@@ -3,6 +3,8 @@ import * as ReactDOM from 'react-dom';
 import { Hello } from './components/Hello';
 import * as OfflinePluginRuntime from 'offline-plugin/runtime';
 
+import 'antd/dist/antd.css';
+
 OfflinePluginRuntime.install();
 
 declare let module: any
@@ -17,11 +19,14 @@ if (module.hot) {
 }
 
 ReactDOM.render(
-	<Hello
-		compiler="Typescript"
-		framework="React"
-		bundler="Webpack"
-	/>,
+	<div>
+		<Hello
+			compiler="Typescript"
+			framework="React"
+			bundler="Webpack"
+		/>
+	</div>
+	,
 	document.getElementById('root')
 );
 

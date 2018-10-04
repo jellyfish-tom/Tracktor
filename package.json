@@ -17,6 +17,7 @@
     "@types/react-dom": "^16.0.8",
     "@types/storybook__addon-actions": "^3.4.1",
     "@types/storybook__react": "^3.0.9",
+    "antd": "^3.10.0",
     "awesome-typescript-loader": "^5.2.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
