@@ -1,12 +1,11 @@
 ### Technicalities
 *** FUTURE TODO ***
 - testcafe 
+- coding guide
 
 *** TODO ***
-- add some predesigned elements library
 - add continous integration
     https://hackernoon.com/continuous-integration-using-travis-on-github-1f7f2314b6b7
-- add coding guide
 
 *** DONE ***
 - setup initial babel, webpack, typescript, react app
@@ -22,6 +21,7 @@
 - add storybook
 - add linter
 - add test env (jest, enzyme)
+- add some predesigned elements library
 
 ### Functionalities
 *** TODO ***
