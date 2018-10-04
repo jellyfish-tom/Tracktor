@@ -6,8 +6,10 @@ interface IProps {
 
 export class Button extends React.PureComponent<IProps, {}> {
     render() {
-        return <button>
-            { this.props.label }
-        </button>
+        return <React.Fragment>
+            <button>
+                { this.props.label }
+            </button>
+        </React.Fragment>
     }
 }
