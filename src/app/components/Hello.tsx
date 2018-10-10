@@ -17,6 +17,7 @@ export class Hello extends React.PureComponent<IProps, { showInstallMessage: boo
             showInstallMessage: false 
         }
     }
+    
     componentDidMount() {
         const isIos = () => {
             return /iphone|ipad|ipod/.test(

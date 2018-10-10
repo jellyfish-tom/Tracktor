@@ -38,6 +38,8 @@
     "lint-staged": "^7.3.0",
     "mini-css-extract-plugin": "^0.4.3",
     "mobx": "^5.5.0",
+    "mongodb": "^3.1.7",
+    "mongoose": "^5.3.2",
     "offline-plugin": "^5.0.5",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "react": "^16.5.2",
