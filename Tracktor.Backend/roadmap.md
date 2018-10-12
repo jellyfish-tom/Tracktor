@@ -8,7 +8,9 @@
 
 *** TODO ***
 
-- add package.json and node modules so you can run both projects using single command from BASE level
+- separate Frontend/Backend into different projects
+  (modularity, can reside on different servers etc.)
+  microservices architecture
 
 - Medium articles out of TIL github wiki
 - create your page online - FASTEST POSSIBLE WAY, style it visually later
@@ -30,7 +32,7 @@
 - add linter
 - add test env (jest, enzyme)
 - add some predesigned elements library
-- fork this to boilerplate on github and add nice description and instructions (check it s working also)
+- - fork this to boilerplate on github and add nice description and instructions (check it s working also)
 
 ### Functionalities
 *** TODO ***
