@@ -11,6 +11,7 @@
       ]
     },
     "rules": {
+      "ordered-imports": true,
       "ter-newline-after-var": [true, "always"],
       "no-feature-imports": false, /* TODO: enable */
       "no-local-feature-imports": false, /* TODO: enable */

@@ -26,20 +26,24 @@ module.exports = {
   },
   module: {
     rules: [
-        {
-            test: /\.(ts|tsx)$/,
-            loader: "ts-loader"
-        },
-        {
-          enforce: "pre",
-          test: /\.js$/,
-          loader: "source-map-loader",
-          exclude: [/node_modules\/mutationobserver-shim/]
-        },
-        {
-          test: /\.css$/,
-          loader: 'style-loader!css-loader'
-        }
+      {
+          test: /\.(ts|tsx)$/,
+          loader: "ts-loader"
+      },
+      {
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "source-map-loader",
+        exclude: [/node_modules\/mutationobserver-shim/]
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
+      {
+        test: /\.json$/,
+        loader: 'json'
+      },
     ]
   },
 };

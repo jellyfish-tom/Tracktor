@@ -1,7 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { Hello } from './components/Hello';
 import * as OfflinePluginRuntime from 'offline-plugin/runtime';
+
+import Navigation from './components/Navigation';
+import Main from './components/Main';
 
 import 'antd/dist/antd.css';
 
@@ -18,15 +22,17 @@ if (module.hot) {
    module.hot.accept();
 }
 
+const App = () => (
+	<React.Fragment>
+		<Navigation/>
+		<Main/>
+	</React.Fragment>
+)
+
 ReactDOM.render(
-	<div>
-		<Hello
-			compiler="Typescript"
-			framework="React"
-			bundler="Webpack"
-		/>
-	</div>
-	,
+	<BrowserRouter>
+		<App/>
+	</BrowserRouter>,
 	document.getElementById('root')
 );
 

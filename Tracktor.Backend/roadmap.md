@@ -7,15 +7,16 @@
     https://hackernoon.com/continuous-integration-using-travis-on-github-1f7f2314b6b7
 
 *** TODO ***
-
+- add basic crud for sugars
+- add simple visualization charts
+- add firebase auth
+- add CRUD snippet for express firebase operations (one for all? or C/R/U/D - separetely - one snippet per each?)
 - separate Frontend/Backend into different projects
   (modularity, can reside on different servers etc.)
   microservices architecture
 
 - Medium articles out of TIL github wiki
 - create your page online - FASTEST POSSIBLE WAY, style it visually later
-
-
 
 *** DONE ***
 - setup initial babel, webpack, typescript, react app
@@ -32,7 +33,7 @@
 - add linter
 - add test env (jest, enzyme)
 - add some predesigned elements library
-- - fork this to boilerplate on github and add nice description and instructions (check it s working also)
+- fork this to boilerplate on github and add nice description and instructions (check it s working also)
 
 ### Functionalities
 *** TODO ***

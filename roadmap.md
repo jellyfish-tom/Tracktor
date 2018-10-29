@@ -7,7 +7,9 @@
     https://hackernoon.com/continuous-integration-using-travis-on-github-1f7f2314b6b7
 
 *** TODO ***
-
+- https://medium.freecodecamp.org/a-practical-es6-guide-on-how-to-perform-http-requests-using-the-fetch-api-594c3d91a547
+- https://medium.freecodecamp.org/the-12-things-you-need-to-consider-when-evaluating-any-new-javascript-library-3908c4ed3f49
+-
 - add package.json and node modules so you can run both projects using single command from BASE level
 
 - Medium articles out of TIL github wiki

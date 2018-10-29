@@ -24,3 +24,6 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
+
+# Firebase SDK admin key
+tracktor-firebase-adminsdk.json
