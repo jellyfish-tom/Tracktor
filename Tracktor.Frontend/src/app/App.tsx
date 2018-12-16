@@ -1,38 +1,61 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import { Hello } from './components/Hello';
-import * as OfflinePluginRuntime from 'offline-plugin/runtime';
+// import * as mobx from "mobx";
+import { observer, Provider } from "mobx-react";
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
+import * as OfflinePluginRuntime from "offline-plugin/runtime";
 
-import Navigation from './components/Navigation';
-import Main from './components/Main';
+import Navigation from "./components/Navigation";
+// import SignUp from "./SignUp";
+// import SignIn from "./SignIn";
+// import PasswordForget from "./PasswordForget";
+import Home from "./pages/Home";
+import { AddSugar } from "./pages/addSugar";
+import AppStore from "./AppStore";
+// import Account from "./Account";
 
-import 'antd/dist/antd.css';
+import * as routes from "./constants/routes";
+import "antd/dist/antd.css";
 
+declare let module: any;
+
+// mobx.useStrict(true);
 OfflinePluginRuntime.install();
 
-declare let module: any
-
-if (process.env.NODE_ENV !== 'production') {
-	console.log('Looks like we are in development mode!');
-	//SET SOME VISUAL INDICATOR IN APP
+if (process.env.NODE_ENV !== "production") {
+  console.log("Looks like we are in development mode!");
+  //SET SOME VISUAL INDICATOR IN APP
 }
 
 if (module.hot) {
-   module.hot.accept();
+  module.hot.accept();
 }
 
-const App = () => (
-	<React.Fragment>
-		<Navigation/>
-		<Main/>
-	</React.Fragment>
-)
-
-ReactDOM.render(
-	<BrowserRouter>
-		<App/>
-	</BrowserRouter>,
-	document.getElementById('root')
+const Main = () => (
+  <main>
+    <Switch>
+      <Route exact path={routes.HOME} component={Home} />
+      <Route exact path={routes.ADD_SUGAR} component={AddSugar} />
+      {/* <Route path={routes.SIGN_IN} component={SignIn}/> */}
+      {/* <Route path={routes.SIGN_UP} component={SignUp}/> */}
+    </Switch>
+  </main>
 );
 
+const appStore = new AppStore(); // TODO: (pass initialized api here)
+// TODO: wrap with <ErrorBoundary> (check Signal)
+const App = () => (
+  // <React.Fragment>
+  // <Navigation />
+  <Main />
+  // </React.Fragment>
+);
+
+ReactDOM.render(
+  <Provider appStore={appStore}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
+  document.getElementById("root")
+);

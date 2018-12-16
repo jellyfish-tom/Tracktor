@@ -1,13 +1,12 @@
-import * as React from 'react'
+import * as React from "react";
 
-export class SignUp extends React.PureComponent<null,null> {
-    render() {
-        return <React.Fragment>
-            SIGN UP
-        </React.Fragment>
-    }
+export class SignUp extends React.PureComponent<null, null> {
+  render() {
+    return <React.Fragment>SIGN UP</React.Fragment>;
+  }
 }
 
-export default SignUp
+export default SignUp;
 
-// https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/
+// you probably have sign up form here:
+// https://ant.design/components/form/
